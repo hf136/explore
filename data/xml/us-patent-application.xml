@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE us-patent-application SYSTEM "us-patent-application-v44-2014-04-03.dtd" [ ]>
+<us-patent-application lang="EN" dtd-version="v4.4 2014-04-03" file="US20150000001A1-20150101.XML" status="PRODUCTION" id="us-patent-application" country="US" date-produced="20141216" date-publ="20150101">
+    <us-bibliographic-data-application lang="EN" country="US">
+        <publication-reference>
+            <document-id>
+                <country>US</country>
+                <doc-number>20150000001</doc-number>
+                <kind>A1</kind>
+                <date>20150101</date>
+            </document-id>
+        </publication-reference>
+        <application-reference appl-type="utility">
+            <document-id>
+                <country>US</country>
+                <doc-number>14486383</doc-number>
+                <date>20140915</date>
+            </document-id>
+        </application-reference>
+        <us-application-series-code>14</us-application-series-code>
+        <classifications-ipcr>
+            <classification-ipcr>
+                <ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>A</section>
+                <class>41</class>
+                <subclass>D</subclass>
+                <main-group>13</main-group>
+                <subgroup>04</subgroup>
+                <symbol-position>F</symbol-position>
+                <classification-value>I</classification-value>
+                <action-date><date>20150101</date></action-date>
+                <generating-office><country>US</country></generating-office>
+                <classification-status>B</classification-status>
+                <classification-data-source>H</classification-data-source>
+            </classification-ipcr>
+            <classification-ipcr>
+                <ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+                <classification-level>A</classification-level>
+                <section>A</section>
+                <class>41</class>
+                <subclass>D</subclass>
+                <main-group>13</main-group>
+                <subgroup>00</subgroup>
+                <symbol-position>L</symbol-position>
+                <classification-value>I</classification-value>
+                <action-date><date>20150101</date></action-date>
+                <generating-office><country>US</country></generating-office>
+                <classification-status>B</classification-status>
+                <classification-data-source>H</classification-data-source>
+            </classification-ipcr>
+        </classifications-ipcr>
+        <classifications-cpc>
+            <main-cpc>
+                <classification-cpc>
+                    <cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+                    <section>A</section>
+                    <class>41</class>
+                    <subclass>D</subclass>
+                    <main-group>13</main-group>
+                    <subgroup>04</subgroup>
+                    <symbol-position>F</symbol-position>
+                    <classification-value>I</classification-value>
+                    <action-date><date>20150101</date></action-date>
+                    <generating-office><country>US</country></generating-office>
+                    <classification-status>B</classification-status>
+                    <classification-data-source>H</classification-data-source>
+                    <scheme-origination-code>C</scheme-origination-code>
+                </classification-cpc>
+            </main-cpc>
+            <further-cpc>
+                <classification-cpc>
+                    <cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+                    <section>A</section>
+                    <class>41</class>
+                    <subclass>D</subclass>
+                    <main-group>13</main-group>
+                    <subgroup>00</subgroup>
+                    <symbol-position>L</symbol-position>
+                    <classification-value>I</classification-value>
+                    <action-date><date>20150101</date></action-date>
+                    <generating-office><country>US</country></generating-office>
+                    <classification-status>B</classification-status>
+                    <classification-data-source>H</classification-data-source>
+                    <scheme-origination-code>C</scheme-origination-code>
+                </classification-cpc>
+            </further-cpc>
+        </classifications-cpc>
+        <classification-national>
+            <country>US</country>
+            <main-classification>  2 52</main-classification>
+        </classification-national>
+        <invention-title id="d0e43">Apron Having Elastic Waist and Zip Closure</invention-title>
+        <us-related-documents>
+            <continuation-in-part>
+                <relation>
+                    <parent-doc>
+                        <document-id>
+                            <country>US</country>
+                            <doc-number>29395273</doc-number>
+                            <date>20111227</date>
+                        </document-id>
+                        <parent-grant-document>
+                            <document-id>
+                                <country>US</country>
+                                <doc-number>D713131</doc-number>
+                            </document-id>
+                        </parent-grant-document>
+                    </parent-doc>
+                    <child-doc>
+                        <document-id>
+                            <country>US</country>
+                            <doc-number>14486383</doc-number>
+                        </document-id>
+                    </child-doc>
+                </relation>
+            </continuation-in-part>
+        </us-related-documents>
+        <us-parties>
+            <us-applicants>
+                <us-applicant sequence="00" app-type="applicant" designation="us-only">
+                    <addressbook>
+                        <last-name>Jackson, SR.</last-name>
+                        <first-name>Monroe</first-name>
+                        <address>
+                            <city>Jackson</city>
+                            <state>MS</state>
+                            <country>US</country>
+                        </address>
+                    </addressbook>
+                    <residence>
+                        <country>US</country>
+                    </residence>
+                </us-applicant>
+            </us-applicants>
+            <inventors>
+                <inventor sequence="00" designation="us-only">
+                    <addressbook>
+                        <last-name>Jackson, SR.</last-name>
+                        <first-name>Monroe</first-name>
+                        <address>
+                            <city>Jackson</city>
+                            <state>MS</state>
+                            <country>US</country>
+                        </address>
+                    </addressbook>
+                </inventor>
+            </inventors>
+        </us-parties>
+    </us-bibliographic-data-application>
+    <abstract id="abstract">
+        <p id="p-0001" num="0000">An hands-free, string-less apron is provided, comprising upper and lower sections constructed from a flexible material, such as a fabric or plastic material. The upper section includes a neck strap for resting behind the neck of a wearer, and the upper section is intended to cover the abdomen of the wearer. The lower section is attached to the upper section, and the upper and lower sections are separated by an elastic waist band extending along the top edge of the lower section. The lower section completely surrounds the waist and legs of the wearer when in a closed configuration. The lower section includes a closure device, such as zipper, extending substantially vertically between the elastic waist band and the bottom edge of the lower section. Optionally, a snap fastener is also located on the waist band to assist in closing the apron around the wearer.</p>
+    </abstract>
+    <drawings id="DRAWINGS">
+        <figure id="Fig-EMI-D00000" num="00000">
+            <img id="EMI-D00000" he="186.69mm" wi="108.97mm" file="US20150000001A1-20150101-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+        </figure>
+        <figure id="Fig-EMI-D00001" num="00001">
+            <img id="EMI-D00001" he="213.87mm" wi="140.29mm" file="US20150000001A1-20150101-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+        </figure>
+        <figure id="Fig-EMI-D00002" num="00002">
+            <img id="EMI-D00002" he="199.39mm" wi="130.39mm" file="US20150000001A1-20150101-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+        </figure>
+    </drawings>
+    <description id="description">
+        <?cross-reference-to-related-applications description="Cross Reference To Related Applications" end="lead"?>
+        <heading id="h-0001" level="1">CROSS-REFERENCE TO RELATED APPLICATIONS</heading>
+        <p id="p-0002" num="0001">This application is a continuation-in-part of design patent application Ser. No. 29/395,273, filed Dec. 27, 2011.</p>
+        <?cross-reference-to-related-applications description="Cross Reference To Related Applications" end="tail"?>
+        <?summary-of-invention description="Summary of Invention" end="lead"?>
+        <heading id="h-0002" level="1">STATEMENT REGARDING FEDERALLY SPONSORED RESEARCH OR DEVELOPMENT</heading>
+        <p id="p-0003" num="0002">Not applicable.</p>
+        <heading id="h-0003" level="1">THE NAMES OF THE PARTIES TO A JOINT RESEARCH AGREEMENT</heading>
+        <p id="p-0004" num="0003">Not applicable.</p>
+        <heading id="h-0004" level="1">BACKGROUND OF THE INVENTION</heading>
+        <p id="p-0005" num="0004">1. Field of the Invention</p>
+        <p id="p-0006" num="0005">The present invention relates to aprons used to protect a wearer's underlying clothing, and more particularly to aprons which provide a continuous protective layer around the periphery of the wearer.</p>
+        <p id="p-0007" num="0006">2. Description of Related Art</p>
+        <p id="p-0008" num="0007">The basic concept of an apron is well known, as evidenced by numerous patents and products which attempt to address the problem of clothing protection. In most cases, a large section of fabric is positioned in front of the wearer, covering the chest and torso, as well as the waist and legs. The apron is typically suspended on the body of the wearer by a strap which is disposed around the back of the wearer's neck. The open sides of the apron are gathered around the back of the wearer, and secured around the waist by a pair of strings or straps which are tied. While this arrangement can be effective for many purposes, there are a number of deficiences which become apparent, particularly when worn in certain industrial environments.</p>
+        <p id="p-0009" num="0008">For example, the use of strings to tie the open sides of the apron can present a dangerous risk to the wearer. Strings dangling from the apron can easily be caught in moving or rotating machinery, especially in food production facilities like meat processing, bakeries, and the like. Also, the basic apron design necessarily results in an open area behind the wearer where the two sides do not fully close. This open area exposes the seat and legs of the wearer to undesireable substances, including food products, grease, cleaning solutions, and similar materials that should never contact the wearer's skin or clothing. Moreover, the skin or clothing of the wearer should never come into contact with tools, utensils, surfaces, food, and other sensitive material in the work environment whose cleanliness or purity must be maintained for quality or safety reasons. Finally, because such conventional aprons often become loose on the wearer, there is a frequent need to untie and retie the strings on the apron to secure it on the wearer. Over the course of a typical work day, such re-tying operation may happen 10-15 times. Of course, such handling requires manual contact with the fabric strings which may have absorbed food or industrial chemicals, further resulting in possible cross-contmination between the wearer and the surrounding work envionment.</p>
+        <p id="p-0010" num="0009">What is needed is an apron that is hands-free and string-less apron which provides a more safe and sanitary alternative to the traditional apron, particularly when used in food service or other similar industrial environments. A wrap-around and closeable lower section which completely surrounds the wearer's legs would minimize soiling of underlying clothing and prevent unwanted contamination. Moreover, the absence of a fastening string or strap removes the risks that such string or strap may become entangled in machinery or contacted by substances that would otherwise be harmful or undersirable to the wearer or consumers of the products being handled.</p>
+        <heading id="h-0005" level="1">SUMMARY OF THE INVENTION</heading>
+        <p id="p-0011" num="0010">Therefore, an apron constructed from a flexible material is provided, comprising an upper section shaped and dimensioned to substantially cover the abdomen of a wearer, a lower section operatively attached to the upper section, wherein the lower section has a bottom edge extending below the knees of a wearer, and wherein the lower section is shaped and dimensioned to completely surround the waist and legs of the wearer when in a closed configuration; an elastic waist band connected between the upper section and the lower section, wherein the elastic waist band completely surrounds the waist of the wearer when in a close configuration; a neck strap extending from the upper section adapted to rest behind the neck of the wearer; and a closure device extending substantially vertically between the elastic waist band and the bottom edge, wherein the closure device is adapted to close the lower section.</p>
+        <p id="p-0012" num="0011">The apron preferably includes a fastener on the elastic waist band adapted to close the elastic waist band, wherein the fastener may be a snap device.</p>
+        <p id="p-0013" num="0012">In a preferred embodiment, the elastic waist band is an elastic fabric stitched between the upper section and the lower section.</p>
+        <p id="p-0014" num="0013">Preferably, the closure device is a zipper.</p>
+        <p id="p-0015" num="0014">The flexible material may be a fabric, preferably water repellent, or a plastic sheeting material.</p>
+        <p id="p-0016" num="0015">The above and other objects and features of the present invention will become apparent from the drawings, the description given herein, and the appended claims.</p>
+        <?summary-of-invention description="Summary of Invention" end="tail"?>
+        <?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+        <description-of-drawings>
+            <heading id="h-0006" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+            <p id="p-0017" num="0016">For a further understanding of the nature, objects, and advantages of the present invention, reference should be had to the following detailed description, read in conjunction with the following drawings, wherein like reference numerals denote like elements.</p>
+            <p id="p-0018" num="0017"><figref idref="DRAWINGS">FIG. 1</figref> shows a perspective view of the apron in a preferred embodiment.</p>
+            <p id="p-0019" num="0018"><figref idref="DRAWINGS">FIG. 2</figref> shows a front view of the apron of <figref idref="DRAWINGS">FIG. 1</figref>.</p>
+        </description-of-drawings>
+        <?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+        <?detailed-description description="Detailed Description" end="lead"?>
+        <heading id="h-0007" level="1">DETAILED DESCRIPTION OF THE INVENTION</heading>
+        <p id="p-0020" num="0019">Before the subject invention is further described, it is to be understood that the invention is not limited to the particular embodiments of the invention described below, as variations of the particular embodiments may be made and still fall within the scope of the appended claims. It is also to be understood that the terminology employed is for the purpose of describing particular embodiments, and is not intended to be limiting. Instead, the scope of the present invention will be established by the appended claims.</p>
+        <p id="p-0021" num="0020">In this specification and the appended claims, the singular forms &#x201c;a,&#x201d; &#x201c;an,&#x201d; and &#x201c;the&#x201d; include plural reference unless the context clearly dictates otherwise. Unless defined otherwise, all technical and scientific terms used herein have the same meaning as commonly understood to one of ordinary skill in the art to which this invention belongs.</p>
+        <p id="p-0022" num="0021">Referring now to the drawings, and in particular <figref idref="DRAWINGS">FIG. 1</figref>, a hands-free, string-less apron <b>1</b> is provided, comprising an upper section <b>2</b> and a lower section <b>3</b>, both constructed from a flexible material, such as a fabric or plastic material. Preferably, if the flexible material is a fabric, it is treated with a water repellant compound to prevent or minimize absorption of undesirable substances.</p>
+        <p id="p-0023" num="0022">The upper section <b>2</b> includes a neck strap <b>4</b> for resting behind the neck of a wearer, and the upper section <b>2</b> is intended to substantially cover the abdomen of the wearer. The lower section <b>3</b> is attached to the upper section <b>2</b>, and the upper and lower sections <b>2</b>, <b>3</b> are separated by an elastic waist band <b>5</b> extending along the top edge of the lower section. Preferably, the elastic waist band <b>5</b> is an elastic fabric stitched between the upper section <b>2</b> and the lower section <b>3</b>. Alternatively, the elastic waist band <b>5</b> is an elastic band which resides within an enclosed channel of fabric loosely sewn around the band. As will be appreciated, the elastic waist band <b>5</b> serves to keep the apron <b>1</b> secured around the wearer, and allows the apron <b>1</b> to comfortably fit a wide range of waist sizes.</p>
+        <p id="p-0024" num="0023">The lower section <b>3</b> completely surrounds the waist and legs of the wearer when in a closed configuration. The lower section <b>3</b> includes a closure device <b>6</b>, such as zipper, extending substantially vertically between the elastic waist band <b>5</b> and the bottom edge <b>7</b> of the lower section <b>3</b>. Optionally, a snap fastener <b>8</b> is also located on the waist band <b>5</b> to assist in closing the apron <b>1</b> around the wearer. As indicated above, the lack of tying strings results in an apron that is essentially hands-free and string-less, because it does not require successive re-tying over the course of the work day. The absence of a fastening string or strap removes the risks that such string or strap may become entangled in machinery, which could result in damage to the wearer and equipment. The wrap-around and closeable lower section which completely surrounds the wearer's legs minimizes soiling of underlying clothing and prevents contamination. Thus, the invention described herein provides a more safe and sanitary alternative to the traditional apron, particularly when used in food service or other similar industrial environments.</p>
+        <p id="p-0025" num="0024">All references cited in this specification are herein incorporated by reference as though each reference was specifically and individually indicated to be incorporated by reference. The citation of any reference is for its disclosure prior to the filing date and should not be construed as an admission that the present invention is not entitled to antedate such reference by virtue of prior invention.</p>
+        <p id="p-0026" num="0025">It will be understood that each of the elements described above, or two or more together may also find a useful application in other types of methods differing from the type described above. Without further analysis, the foregoing will so fully reveal the gist of the present invention that others can, by applying current knowledge, readily adapt it for various applications without omitting features that, from the standpoint of prior art, fairly constitute essential characteristics of the generic or specific aspects of this invention set forth in the appended claims. The foregoing embodiments are presented by way of example only, and the scope of the present invention is to be limited only by the following claims.</p>
+        <?detailed-description description="Detailed Description" end="tail"?>
+    </description>
+    <us-claim-statement>The invention claimed is:</us-claim-statement>
+    <claims id="claims">
+        <claim id="CLM-00001" num="00001">
+            <claim-text><b>1</b>. An apron constructed from a flexible material, comprising:
+                <claim-text>(a) an upper section shaped and dimensioned to substantially cover the abdomen of a wearer,</claim-text>
+                <claim-text>(b) a lower section operatively attached to the upper section, wherein the lower section has a bottom edge extending below the knees of a wearer, and wherein the lower section is shaped and dimensioned to completely surround the waist and legs of the wearer when in a closed configuration;</claim-text>
+                <claim-text>(c) an elastic waist band connected between the upper section and the lower section, wherein the elastic waist band completely surrounds the waist of the wearer when in a close configuration;</claim-text>
+                <claim-text>(d) a neck strap extending from the upper section adapted to rest behind the neck of the wearer; and</claim-text>
+                <claim-text>(e) a closure device extending substantially vertically between the elastic waist band and the bottom edge, wherein the closure device is adapted to close the lower section.</claim-text>
+            </claim-text>
+        </claim>
+        <claim id="CLM-00002" num="00002">
+            <claim-text><b>2</b>. The apron of <claim-ref idref="CLM-00001">claim 1</claim-ref>, further including a fastener on the elastic waist band adapted to close the elastic waist band.</claim-text>
+        </claim>
+        <claim id="CLM-00003" num="00003">
+            <claim-text><b>3</b>. The apron of <claim-ref idref="CLM-00002">claim 2</claim-ref>, wherein the fastener is a snap device.</claim-text>
+        </claim>
+        <claim id="CLM-00004" num="00004">
+            <claim-text><b>4</b>. The apron of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the elastic waist band is an elastic fabric stitched between the upper section and the lower section.</claim-text>
+        </claim>
+        <claim id="CLM-00005" num="00005">
+            <claim-text><b>5</b>. The apron of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the closure device is a zipper.</claim-text>
+        </claim>
+        <claim id="CLM-00006" num="00006">
+            <claim-text><b>6</b>. The apron of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the flexible material is a fabric.</claim-text>
+        </claim>
+        <claim id="CLM-00007" num="00007">
+            <claim-text><b>7</b>. The apron of <claim-ref idref="CLM-00006">claim 6</claim-ref>, wherein the fabric is water repellent.</claim-text>
+        </claim>
+        <claim id="CLM-00008" num="00008">
+            <claim-text><b>8</b>. The apron of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the flexible material is a plastic sheeting material.</claim-text>
+        </claim>
+    </claims>
+</us-patent-application>
