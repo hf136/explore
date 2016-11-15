@@ -1,1 +1,5 @@
+# idea prject
 .idea/
+
+# log files
+*.log

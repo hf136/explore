@@ -194,11 +194,11 @@ public class ParsePatentGrant {
 
     public static void main(String[] args){
         ParsePatentGrant parsePatentGrant = new ParsePatentGrant();
-//        parsePatentGrant.toCsv("D:\\IBM\\watson\\patents\\xml\\ipg", "D:\\IBM\\watson\\patents\\csv\\ipg");
-        try {
-            parsePatentGrant.mergeCsv("D:\\IBM\\watson\\patents\\csv\\ipg", "D:\\IBM\\watson\\patents\\csv\\ipg\\result\\ipg_all.csv");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        parsePatentGrant.toCsv("data/xml/ipg", "data/res/ipg");
+//        try {
+//            parsePatentGrant.mergeCsv("data/xml/ipg/", "data/res/ipg/ipg.csv");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 }
