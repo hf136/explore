@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Xml2csv {
+public class ParsePatentApplication {
 
     String[] field = {
             "patent_appl_id",
@@ -86,6 +86,7 @@ public class Xml2csv {
 
             try {
                 Document document = DocumentHelper.parseText(inBuffer.toString());
+                XMLUtil.treeWalk(document);
 
                 // 对于每篇专利，写入数据
                 StringBuffer text = new StringBuffer();
@@ -241,8 +242,8 @@ public class Xml2csv {
     }
 
     public static void main(String[] args){
-        Xml2csv xml2csv = new Xml2csv();
-        xml2csv.toCsv("D:\\IBM\\watson\\patents\\xml\\test", "D:\\IBM\\watson\\patents\\csv\\test");
+        ParsePatentApplication xml2csv = new ParsePatentApplication();
+        xml2csv.toCsv("data\\xml\\ipa", "data\\res\\ipa");
     }
 }
 
