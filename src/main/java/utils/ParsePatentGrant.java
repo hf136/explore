@@ -93,6 +93,9 @@ public class ParsePatentGrant {
 
             try {
                 Document document = DocumentHelper.parseText(inBuffer.toString());
+                PGVisitor pgVisitor = new PGVisitor();
+                document.accept(pgVisitor);
+                System.out.println(pgVisitor.getPatentGrant());
 
                 // 对于每篇专利，写入数据
                 StringBuffer text = new StringBuffer();

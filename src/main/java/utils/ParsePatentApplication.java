@@ -245,10 +245,10 @@ public class ParsePatentApplication {
         ParsePatentApplication xml2csv = new ParsePatentApplication();
         xml2csv.toCsv("data\\xml\\ipa", "data\\res\\ipa");
     }
-}
 
-class MyEntityResolver implements EntityResolver {
-    public InputSource resolveEntity(String publicId, String systemId) {
-        return new InputSource(new StringBufferInputStream(""));
+    class MyEntityResolver implements EntityResolver {
+        public InputSource resolveEntity(String publicId, String systemId) {
+            return new InputSource(new StringBufferInputStream(""));
+        }
     }
 }

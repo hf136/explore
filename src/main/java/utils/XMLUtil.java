@@ -1,8 +1,6 @@
 package utils;
 
-import org.dom4j.Document;
-import org.dom4j.Element;
-import org.dom4j.Node;
+import org.dom4j.*;
 
 /**
  * Created by wyq on 2016/11/14.
@@ -36,4 +34,7 @@ public class XMLUtil {
         }
     }
 
+    static void visit(Document document){
+        document.accept(new PAVisitor());
+    }
 }
