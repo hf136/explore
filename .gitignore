@@ -1,5 +1,6 @@
 # idea prject
 .idea/
+target/
 *.iml
 
 # log files

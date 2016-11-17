@@ -96,6 +96,8 @@ public class ParsePatentGrant {
                 PGVisitor pgVisitor = new PGVisitor();
                 document.accept(pgVisitor);
                 System.out.println(pgVisitor.getPatentGrant());
+                System.out.println(pgVisitor.getInventors());
+                System.out.println(pgVisitor.getOrganizations());
 
                 // 对于每篇专利，写入数据
                 StringBuffer text = new StringBuffer();

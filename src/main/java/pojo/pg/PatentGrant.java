@@ -36,4 +36,20 @@ public class PatentGrant {
                 ", national_country='" + national_country + '\'' +
                 '}';
     }
+
+    public String toCSV() {
+        return grant_id + ',' +
+                kind + ',' +
+                date + ',' +
+                country + ',' +
+                appl_id + ',' +
+                appl_type + ',' +
+                appl_date + ',' +
+                invention_title_id + ',' +
+                invention_title + ',' +
+                locarno_classification + ',' +
+                locarno_edition + ',' +
+                national_classification + ',' +
+                national_country;
+    }
 }
