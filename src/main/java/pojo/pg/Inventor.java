@@ -35,4 +35,5 @@ public class Inventor {
                 state + ',' +
                 country;
     }
+
 }
