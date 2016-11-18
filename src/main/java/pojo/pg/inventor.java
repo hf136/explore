@@ -23,6 +23,10 @@ public class Inventor {
                 '}';
     }
 
+    public String toCSVHead(){
+        return "id,firstname,lastname,city,state,country";
+    }
+
     public String toCSV() {
         return id + ',' +
                 firstname + ',' +

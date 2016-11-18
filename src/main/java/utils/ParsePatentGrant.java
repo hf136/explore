@@ -48,7 +48,7 @@ public class ParsePatentGrant {
         while (scanner.hasNextLine()){
             StringBuilder inBuffer = new StringBuilder();
             String line = scanner.nextLine().trim();
-            if(line.startsWith("<?xml")) {
+            if(line.startsWith("<us-patent-grant")) {
                 inBuffer.append(line);
                 while (scanner.hasNextLine() && !(line = scanner.nextLine()).equals("</us-patent-grant>")) {
                     if (line.startsWith("<!DOCTYPE"))

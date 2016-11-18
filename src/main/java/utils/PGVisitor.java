@@ -25,8 +25,8 @@ public class PGVisitor extends VisitorSupport{
             // ×¨ÀûÊÚÈ¨
             if (node.getName().equals("publication-reference")) {
                 Element doc = node.element("document-id");
-                pg.country = doc.element("country").getText();
-                pg.grant_id = doc.element("doc-number").getText();
+                pg.country = doc.elementText("country");
+                pg.grant_id = doc.elementText("doc-number");
                 pg.kind = doc.elementText("kind");
                 pg.date = doc.elementText("date");
             } else if (node.getName().equals("application-reference")) {
@@ -51,12 +51,12 @@ public class PGVisitor extends VisitorSupport{
                     Inventor inven = new Inventor();
                     Element e = (Element) i.next();
                     e = e.element("addressbook");
-                    inven.firstname = e.elementText("first-name").replaceAll(",", ";");
-                    inven.lastname = e.elementText("last-name").replaceAll(",", ";");
+                    inven.firstname = e.elementText("first-name") == null? "" : e.elementText("first-name").replaceAll(",", ";");
+                    inven.lastname = e.elementText("last-name") == null? "" : e.elementText("last-name").replaceAll(",", ";");
 
                     Element address = e.element("address");
                     if (address != null) {
-                        inven.city = address.elementText("city");
+                        inven.city = address.elementText("city") == null? "" : address.elementText("city").replaceAll(",", ";");
                         inven.state = address.elementText("state");
                         inven.country = address.elementText("country");
                     }
@@ -72,7 +72,7 @@ public class PGVisitor extends VisitorSupport{
                     organization.orgname = node.elementText("orgname").replaceAll(",", ";");
                     Element address = node.element("address");
                     if (address != null) {
-                        organization.city = address.elementText("city").replaceAll(",", ";");
+                        organization.city = address.elementText("city") == null? "": address.elementText("city").replaceAll(",", ";");
                         organization.state = address.elementText("state");
                         organization.country = address.elementText("country");
                     }
@@ -83,7 +83,7 @@ public class PGVisitor extends VisitorSupport{
             }
         }
         catch (NullPointerException e){
-
+            e.printStackTrace();
         }
     }
 

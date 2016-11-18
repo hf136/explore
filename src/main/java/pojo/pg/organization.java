@@ -23,6 +23,10 @@ public class Organization {
                 '}';
     }
 
+    public String toCSVHead(){
+        return "id,orgname,city,state,country,parties";
+    }
+
     public String toCSV() {
         return id + ',' +
                 orgname + ',' +

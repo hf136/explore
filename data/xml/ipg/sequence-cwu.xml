@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-cwu id="SEQLST-1">
+    <publication-reference>
+        <document-id>
+            <country>US</country>
+            <doc-number>RE045340</doc-number>
+            <kind>E1</kind>
+            <date>20150113</date>
+        </document-id>
+    </publication-reference>
+    <number>1</number>
+    <sequence-list-new-rules>
+        <s100>
+            <s160>1</s160>
+        </s100>
+        <s200>
+            <s210>1</s210>
+            <s211>575</s211>
+            <s212>PRT</s212>
+            <s213>Lens culinaris</s213>
+        </s200>
+        <s400> 1Pro Arg Lys Gly Ala Asp Ile Leu Val Glu Ala Leu Glu Arg Gln Gly1               5                   10                  15Val Thr Asn Val Phe Ala Tyr Pro Gly Gly Ala Ser Met Glu Ile His            20                  25                  30Gln Ala Leu Thr Arg Ser Lys Thr Ile Arg Asn Ile Leu Pro Arg His        35                  40                  45Glu Gln Gly Gly Val Phe Ala Ala Glu Gly Tyr Ala Arg Ser Ser Gly    50                  55                  60Leu Pro Gly Val Cys Ile Ala Thr Ser Gly Pro Gly Ala Thr Asn Leu65                  70                  75                  80Val Ser Gly Leu Ala Asp Ala Leu Met Asp Ser Val Pro Leu Val Ala                85                  90                  95Ile Thr Gly Gln Val Pro Arg Arg Met Ile Gly Thr Asp Val Phe Gln            100                 105                 110Glu Thr Pro Ile Val Glu Val Thr Arg Ser Ile Thr Lys His Asn Tyr        115                 120                 125Leu Ile Leu Asp Val Asp Asp Ile Pro Arg Val Val Lys Glu Ala Phe    130                 135                 140Phe Leu Ala Thr Ser Gly Arg Pro Gly Pro Val Leu Ile Asp Val Pro145                 150                 155                 160Lys Asp Ile Gln Gln Gln Leu Ala Val Pro Asn Trp Ala Glu Pro Ile                165                 170                 175Lys Leu Thr Gly Tyr Val Ser Arg Leu Pro Lys Ile Pro Asp Glu Ser            180                 185                 190Gln Phe Glu Gln Val Val Arg Leu Leu Leu Glu Ser Lys Lys Pro Val        195                 200                 205Leu Tyr Val Gly Gly Gly Cys Leu Asn Ser Ser Glu Glu Leu Asn Arg    210                 215                 220Phe Val Glu Leu Thr Gly Ile Pro Val Ala Ser Thr Leu Met Gly Leu225                 230                 235                 240Gly Ser Tyr Pro Ile Gly Gly Glu His Ser Leu His Met Leu Gly Met                245                 250                 255His Gly Thr Val Tyr Ala Asn Tyr Ala Val Asp Ser Ser Asp Leu Leu            260                 265                 270Leu Ala Phe Gly Val Arg Phe Asp Asp Arg Val Thr Gly Lys Leu Glu        275                 280                 285Ala Phe Ala Ser Arg Ala Lys Ile Val His Ile Asp Ile Asp Ser Ala    290                 295                 300Glu Ile Gly Lys Asn Lys Ile Pro His Met Ser Ile Cys Ala Asp Met305                 310                 315                 320Lys Val Ala Leu Glu Gly Leu Asn Arg Val Leu Glu Ser Lys Gly Val                325                 330                 335Lys Gly Lys Leu Asp Phe Glu Ala Trp Arg Gln Glu Leu Asn Val Gln            340                 345                 350Lys Leu Lys Phe Pro Leu Gly Phe Lys Thr Phe Glu Asn Ala Ile Ser        355                 360                 365Pro Gln Tyr Ala Ile Gln Val Leu Asp Glu Leu Thr Asn Gly Asp Ala    370                 375                 380Ile Ile Ser Thr Gly Val Gly Gln His Gln Met Trp Ala Ala Gln Phe385                 390                 395                 400Tyr Glu Tyr Lys Arg Pro Arg Gln Trp Leu Thr Ser Gly Gly Leu Gly                405                 410                 415Ala Met Gly Phe Gly Leu Pro Ala Ala Ile Gly Ala Ala Val Ala Asn            420                 425                 430Pro Asn Ala Val Val Val Asp Ile Asp Gly Asp Gly Ser Phe Ile Met        435                 440                 445Asn Val Gln Glu Leu Ala Thr Ile Arg Val Glu Asn Leu Pro Ile Lys    450                 455                 460Ile Leu Leu Leu Asn Asn Gln His Leu Gly Met Val Val Gln Trp Glu465                 470                 475                 480Asp Arg Phe Tyr Lys Ser Asn Arg Gly His Thr Tyr Leu Gly Asp Pro                485                 490                 495Ser Arg Glu Glu Glu Ile Phe Pro Asn Met Leu Gly Phe Ala Asp Ala            500                 505                 510Cys Gly Ile Pro Ala Ala Arg Val Thr Lys Lys Glu Glu Leu Arg Glu        515                 520                 525Ala Ile Gln Lys Met Leu Asp Thr Pro Gly Pro Tyr Leu Leu Asp Val    530                 535                 540Ile Thr Pro His Gln Glu His Val Leu Pro Met Ile Pro Ser Asn Gly545                 550                 555                 560Ser Phe Lys Asp Val Ile Thr Glu Gly Asp Gly Arg Thr Ser Tyr                565                 570                 575</s400>
+    </sequence-list-new-rules>
+</sequence-cwu>
