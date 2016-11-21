@@ -219,7 +219,12 @@ public class ParsePatentGrant {
                             bwPatentOrganization.write(po.toCSV());
                             bwPatentOrganization.newLine();
                         }
-
+                        // 专利引用关系
+                        List<patent_citation> patent_citations = pgVisitor.getPatent_citations();
+                        for (int i = 0; i < patent_citations.size(); i++) {
+                            bwPatentCitation.write(patent_citations.get(i).toCSV());
+                            bwPatentCitation.newLine();
+                        }
                     } catch (DocumentException e) {
                         if(!documentException) {
                             System.err.println(inBuffer.toString());

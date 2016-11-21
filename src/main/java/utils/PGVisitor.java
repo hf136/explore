@@ -5,6 +5,7 @@ import org.dom4j.VisitorSupport;
 import pojo.pg.Organization;
 import pojo.pg.PatentGrant;
 import pojo.pg.Inventor;
+import pojo.pg.patent_citation;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -18,6 +19,7 @@ public class PGVisitor extends VisitorSupport{
     PatentGrant pg = new PatentGrant();
     List<Inventor> inventors = new ArrayList<Inventor>();
     List<Organization> organizations = new ArrayList<Organization>();
+    List<patent_citation> patent_citations = new ArrayList<patent_citation>();
 
     @Override
     public void visit(Element node) {
@@ -81,6 +83,15 @@ public class PGVisitor extends VisitorSupport{
                     organizations.add(organization);
                 }
             }
+
+            //专利引用关系
+            if(node.getName().equals("patcit") && node.getParent().getName().equals("us-citation")){
+                Element doc = node.element("document-id");
+                patent_citation pcitation = new patent_citation();
+                pcitation.citation_id = doc.elementText("doc-number");
+                pcitation.patent_id = pg.grant_id;
+                patent_citations.add(pcitation);
+            }
         }
         catch (NullPointerException e){
             e.printStackTrace();
@@ -97,5 +108,9 @@ public class PGVisitor extends VisitorSupport{
 
     public List<Organization> getOrganizations() {
         return organizations;
+    }
+
+    public List<patent_citation> getPatent_citations() {
+        return patent_citations;
     }
 }
