@@ -46,6 +46,13 @@ public class PGVisitor extends VisitorSupport{
                 pg.national_classification = node.elementText("main-classification");
                 pg.national_country = node.elementText("country");
             }
+            // 索赔的次数
+            else if(node.getName().equals("number-of-claims")){
+                pg.number_of_claims = node.getText();
+            }
+            else if(node.getName().equals("us-exemplary-claim")){
+                pg.exemplary_claim = node.getText();
+            }
 
             //发明家
             if (node.getName().equals("inventors")) {

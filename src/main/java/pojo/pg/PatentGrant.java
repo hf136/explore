@@ -17,6 +17,8 @@ public class PatentGrant {
     public String locarno_edition;
     public String national_classification;
     public String national_country;
+    public String number_of_claims;
+    public String exemplary_claim;
 
     @Override
     public String toString() {
@@ -34,11 +36,13 @@ public class PatentGrant {
                 ", locarno_edition='" + locarno_edition + '\'' +
                 ", national_classification='" + national_classification + '\'' +
                 ", national_country='" + national_country + '\'' +
+                ", number_of_claims='" + number_of_claims + '\'' +
+                ", exemplary_claim='" + exemplary_claim + '\'' +
                 '}';
     }
 
     public String toCSVHead(){
-        return "grant_id,kind,date,country,appl_id,appl_type,appl_date,invention_title_id,invention_title,locarno_classification,locarno_edition,national_classification,national_country";
+        return "grant_id,kind,date,country,appl_id,appl_type,appl_date,invention_title_id,invention_title,locarno_classification,locarno_edition,national_classification,national_country,number_of_claims,exemplary_claim";
     }
 
     public String toCSV() {
@@ -54,6 +58,8 @@ public class PatentGrant {
                 locarno_classification + ',' +
                 locarno_edition + ',' +
                 national_classification + ',' +
-                national_country;
+                national_country + ',' +
+                number_of_claims + ',' +
+                exemplary_claim;
     }
 }
