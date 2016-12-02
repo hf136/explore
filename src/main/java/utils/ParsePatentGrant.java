@@ -376,5 +376,12 @@ public class ParsePatentGrant {
 //        parsePatentGrant.mergeCsv("D:\\IBM\\watson\\patents\\csv\\ipg", "D:\\IBM\\watson\\patents\\csv\\ipg\\result\\ipg15_inventors.csv", "inventors");
 //        parsePatentGrant.mergeCsv("D:\\IBM\\watson\\patents\\csv\\ipg", "D:\\IBM\\watson\\patents\\csv\\ipg\\result\\ipg15_organizations.csv", "_organizations");
 //        parsePatentGrant.mergeCsv("D:\\IBM\\watson\\patents\\csv\\ipg", "D:\\IBM\\watson\\patents\\csv\\ipg\\result\\ipg15_patent_grant.csv", "_patent_grant");
+
+        // 打包成 jar 运行
+//        if(args.length != 2){
+//            System.out.println("Usage: xml_src_dir save_dir");
+//            return;
+//        }
+//        parsePatentGrant.xml2csv(args[0], args[1]);
     }
 }
