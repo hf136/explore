@@ -84,3 +84,17 @@ org_inventor_patents = pg_org_inv['grant_id'].groupby([pg_org_inv['orgname'], pg
 # top10 公司的发明家排行
 for orgname in top10_orgname:
     companys[orgname]['inventors'] = org_inventor_patents[orgname]
+
+
+# 转化成时间类型
+pg_inv['date'] = pg_inv['date'].apply(lambda x : str(x))
+pg_inv['date'] = pd.to_datetime(pg_inv['date'])
+
+pg_inv['appl_date'] = pg_inv['appl_date'].apply(lambda  x : str(x))
+pg_inv['appl_date'] = pd.to_datetime(pg_inv['appl_date'])
+
+# 每个作者授予专利数时间序列图
+inventor_date_pg = pg_inv['grant_id'].groupby([pg_inv['firstname'], pg_inv['lastname'], pg_inv['date']]).count()
+
+# 发明家 Shunpei Yamazaki 发明专利数随时间变化图
+# plt.show(inventor_date_pg['Shunpei']['Yamazaki'].plot())
