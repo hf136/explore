@@ -383,5 +383,6 @@ public class ParsePatentGrant {
 //            return;
 //        }
 //        parsePatentGrant.xml2csv(args[0], args[1]);
+//        System.out.println("xml to csv completed.");
     }
 }

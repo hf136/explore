@@ -46,7 +46,7 @@ public class PGVisitor extends VisitorSupport{
                 pg.national_classification = node.elementText("main-classification");
                 pg.national_country = node.elementText("country");
             }
-            // 索赔的次数
+            // 索赔的项的个数
             else if(node.getName().equals("number-of-claims")){
                 pg.number_of_claims = node.getText();
             }
@@ -54,28 +54,9 @@ public class PGVisitor extends VisitorSupport{
                 pg.exemplary_claim = node.getText();
             }
 
-            //发明家
-            if (node.getName().equals("inventors")) {
-                for (Iterator i = node.elementIterator("inventor"); i.hasNext(); ) {
-                    Inventor inven = new Inventor();
-                    Element e = (Element) i.next();
-                    e = e.element("addressbook");
-                    inven.firstname = e.elementText("first-name") == null? "" : e.elementText("first-name").replaceAll(",", ";");
-                    inven.lastname = e.elementText("last-name") == null? "" : e.elementText("last-name").replaceAll(",", ";");
-
-                    Element address = e.element("address");
-                    if (address != null) {
-                        inven.city = address.elementText("city") == null? "" : address.elementText("city").replaceAll(",", ";");
-                        inven.state = address.elementText("state");
-                        inven.country = address.elementText("country");
-                    }
-                    //System.out.println(inven);
-                    inventors.add(inven);
-                }
-            }
-
-            //相关组织
+            //相关组织 和 发明家
             if (node.getName().equals("addressbook")) {
+                //相关组织
                 if (node.element("orgname") != null) {
                     Organization organization = new Organization();
                     organization.orgname = node.elementText("orgname").replaceAll(",", ";");
@@ -89,10 +70,26 @@ public class PGVisitor extends VisitorSupport{
                     //System.out.println(organization);
                     organizations.add(organization);
                 }
+                //发明家
+                else if(node.getParent().getName().equals("inventor") ||
+                        ( node.getParent().getName().equals("applicant") && node.getParent().attributeValue("app-type").equals("applicant-inventor") )){
+                    Inventor inven = new Inventor();
+                    inven.firstname = node.elementText("first-name") == null? "" : node.elementText("first-name").replaceAll(",", ";");
+                    inven.lastname = node.elementText("last-name") == null? "" : node.elementText("last-name").replaceAll(",", ";");
+
+                    Element address = node.element("address");
+                    if (address != null) {
+                        inven.city = address.elementText("city") == null? "" : address.elementText("city").replaceAll(",", ";");
+                        inven.state = address.elementText("state");
+                        inven.country = address.elementText("country");
+                    }
+                    //System.out.println(inven);
+                    inventors.add(inven);
+                }
             }
 
             //专利引用关系
-            if(node.getName().equals("patcit") && node.getParent().getName().equals("us-citation")){
+            if(node.getName().equals("patcit") && (node.getParent().getName().equals("us-citation") || node.getParent().getName().equals("citation"))){
                 Element doc = node.element("document-id");
                 patent_citation pcitation = new patent_citation();
                 pcitation.citation_id = doc.elementText("doc-number");
