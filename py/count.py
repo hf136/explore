@@ -19,12 +19,22 @@ res['orgname'] = res['orgname'].apply(lambda x: x.lower())
 # 筛选出 assignee 专利受让人（所有权人）
 ass = res[res['parties'] == 'assignee']
 
+# int -> str -> datetime 转化成时间类型
+# 不建议这种赋值方法
+# http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+ass['date'] = ass['date'].apply(lambda d: str(d))
+ass['date'] = pd.to_datetime(ass['date'])
+ass['appl_date'] = ass['appl_date'].apply(lambda d: str(d))
+ass['appl_date'] = pd.to_datetime(ass['appl_date'])
+
+
 # 每个公司的专利数
 organization_patents = ass['grant_id'].groupby(ass['orgname']).count().sort_values(ascending=False)
 #organization_patents.to_csv('organization_patent_numbers.csv')
 plt.show(organization_patents[0:10].plot(kind='bar'))
 # 排名前十的公司名字
 top10_orgname = organization_patents[0:10].index.values
+np.save('top10/top10_orgname.npy', top10_orgname)
 
 # design设计专利
 design = ass[ass['appl_type'] == 'design']
@@ -98,3 +108,11 @@ inventor_date_pg = pg_inv['grant_id'].groupby([pg_inv['firstname'], pg_inv['last
 
 # 发明家 Shunpei Yamazaki 发明专利数随时间变化图
 # plt.show(inventor_date_pg['Shunpei']['Yamazaki'].plot())
+
+
+#  读取专利引用数据
+patent_citation = pd.read_csv('patent_citation.csv')
+
+patent_citation['patent_id'].groupby(patent_citation['citation_id']).count().sort_values(ascending=False)
+
+patent_citation['citation_id'].groupby(patent_citation['patent_id']).count().sort_values(ascending=False)

@@ -24,7 +24,7 @@ public class PGVisitor extends VisitorSupport{
     @Override
     public void visit(Element node) {
         try {
-            // ×¨ÀûÊÚÈ¨
+            // ä¸“åˆ©æˆæƒ
             if (node.getName().equals("publication-reference")) {
                 Element doc = node.element("document-id");
                 pg.country = doc.elementText("country");
@@ -46,7 +46,7 @@ public class PGVisitor extends VisitorSupport{
                 pg.national_classification = node.elementText("main-classification");
                 pg.national_country = node.elementText("country");
             }
-            // Ë÷ÅâµÄÏîµÄ¸öÊı
+            // ç´¢èµ”çš„é¡¹çš„ä¸ªæ•°
             else if(node.getName().equals("number-of-claims")){
                 pg.number_of_claims = node.getText();
             }
@@ -54,9 +54,9 @@ public class PGVisitor extends VisitorSupport{
                 pg.exemplary_claim = node.getText();
             }
 
-            //Ïà¹Ø×éÖ¯ ºÍ ·¢Ã÷¼Ò
+            //ç›¸å…³ç»„ç»‡ å’Œ å‘æ˜å®¶
             if (node.getName().equals("addressbook")) {
-                //Ïà¹Ø×éÖ¯
+                //ç›¸å…³ç»„ç»‡
                 if (node.element("orgname") != null) {
                     Organization organization = new Organization();
                     organization.orgname = node.elementText("orgname").replaceAll(",", ";");
@@ -70,7 +70,7 @@ public class PGVisitor extends VisitorSupport{
                     //System.out.println(organization);
                     organizations.add(organization);
                 }
-                //·¢Ã÷¼Ò
+                //å‘æ˜å®¶
                 else if(node.getParent().getName().equals("inventor") ||
                         ( node.getParent().getName().equals("applicant") && node.getParent().attributeValue("app-type").equals("applicant-inventor") )){
                     Inventor inven = new Inventor();
@@ -88,7 +88,7 @@ public class PGVisitor extends VisitorSupport{
                 }
             }
 
-            //×¨ÀûÒıÓÃ¹ØÏµ
+            //ä¸“åˆ©å¼•ç”¨å…³ç³»
             if(node.getName().equals("patcit") && (node.getParent().getName().equals("us-citation") || node.getParent().getName().equals("citation"))){
                 Element doc = node.element("document-id");
                 patent_citation pcitation = new patent_citation();
