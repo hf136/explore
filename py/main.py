@@ -123,3 +123,19 @@ while start_date <= end_date:
     patent_type.to_csv(year + '/res/patent_type.csv', header=['count', 'year'])
 
     start_date += 1
+
+
+# 合并相对应的 csv 文件
+files = os.listdir('2006/res')
+for filename in files:
+    # 合并 csv
+    start_date = 2006
+    end_date = 2015
+    li = []
+    while start_date <= end_date:
+        year = str(start_date)
+        tmp = pd.read_csv(year + '/res/' + filename)
+        li.append(tmp)
+        start_date += 1
+    res = pd.concat(li, ignore_index=True)
+    res.to_csv('res/' + filename)
