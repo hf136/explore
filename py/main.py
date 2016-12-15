@@ -138,4 +138,4 @@ for filename in files:
         li.append(tmp)
         start_date += 1
     res = pd.concat(li, ignore_index=True)
-    res.to_csv('res/' + filename)
+    res.to_csv('res/' + filename, index=None)
