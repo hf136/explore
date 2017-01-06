@@ -91,6 +91,7 @@ for i in range(2006, 2015):
     arr.update({i:res[i][:3]})
     # print i
     # print res[i][:3]
+arr.update({2015:res[2015][1:4]})
 res = DataFrame(arr)
 res.T.plot(kind='bar')
 plt.xlabel('year')
@@ -106,6 +107,27 @@ trans = trans.dropna()
 sample = trans.sample(5)
 sample.T.plot()
 plt.show()
+# top 5 的发明家
+res_rank = inventor_rank['count'].groupby([inventor_rank['firstname'], inventor_rank['lastname']]).sum().sort_values(ascending=False)
+top5_inventor = res_rank[:5]
+
+# 画图（前半段实线，后半段虚线）
+legend = []
+color = ['b', 'g', 'r', 'c', 'm']
+i = 0
+for name in top5_inventor.index.values:
+    res[name[0]][name[1]].plot(color=color[i])
+    legend.append(name[0] + " " + name[1])
+    i += 1
+df = pd.DataFrame({'year': [2015, 2016, 2017, 2018], 'month': [1, 1, 1, 1], 'day': [1, 1, 1, 1]})
+pred_time = pd.to_datetime(df)
+pred_data = [[54, 50, 45, 40], [444, 445, 445, 445], [253, 275, 300, 326], [7, 6, 6, 6], [255, 300, 350, 400]]
+for i in range(0, 5):
+    pred = Series(pred_data[i], index=pred_time)
+    pred.plot(color=color[i], linestyle='--')
+plt.legend(legend, loc='best')
+plt.ylabel('number of patents')
+plt.show()
 
 # 8. top 10 的发明家的专利类型
 inventor_type = pd.read_csv('inventor_type.csv')
@@ -114,6 +136,12 @@ inventor_type['year'] = pd.to_datetime(inventor_type['year'])
 grouped = inventor_type['count'].groupby([inventor_type['firstname'], inventor_type['lastname'], inventor_type['year']])
 
 # 9. top 10 的发明家的发明领域变化
+inventor_class = pd.read_csv('inventor_class.csv')
+inventor_class['year'] = inventor_class['year'].apply(lambda y: str(y))
+inventor_class['year'] = pd.to_datetime(inventor_class['year'])
+res = inventor_class['count'].groupby([inventor_class['firstname'], inventor_class['lastname'], inventor_class['year'], inventor_class['main_class']]).sum()
+
+
 
 # 10. 专利被引用数随时间变化
 
