@@ -6,7 +6,7 @@ import math
 # 读取发明家发明专利的 csv 数据
 def get_data(min_number=0):
     data = []
-    with open('inventor_hist_dropna_data.csv') as f:
+    with open('../data/inventors/inventor_hist_dropna_data.csv') as f:
         f_csv = csv.reader(f)
         headers = next(f_csv)
         for row in f_csv:
@@ -17,7 +17,7 @@ def get_data(min_number=0):
     pi = 0.
     for line in data:
         # pi
-        pi = pi + math.sqrt(sum(float(x) for x in line[7:]))
+        pi += math.sqrt(sum(float(x) for x in line[7:]))
         e = [float(x) for x in line[:7]]
         pre = sum(float(x) for x in line[4:7]) / 3.0
         if pre < min_number:
