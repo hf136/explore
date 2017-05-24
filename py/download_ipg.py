@@ -12,6 +12,6 @@ if __name__ == '__main__':
 		url = "https://bulkdata.uspto.gov/data2/patent/grant/redbook/fulltext/" + date.strftime("%Y") + "/ipg"
 		url = url + date.strftime("%Y%m%d")[2:] + ".zip"
 		fname = "ipg" + date.strftime("%Y%m%d")[2:] + ".zip"
-		print url, fname
+		print(url, fname)
 		# urllib.urlretrieve(url, filename=fname)
 		date = date + datetime.timedelta(days=7)

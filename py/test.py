@@ -10,13 +10,13 @@ product = tf.matmul(matrix1, matrix2)
 
 sess = tf.Session()
 result = sess.run(product)
-print result
+print(result)
 sess.close()
 
 # 使用 with
 with tf.Session() as sess:
     result = sess.run([product])
-    print result
+    print(result)
 
 # 变量
 state = tf.Variable(0, name="counter")
@@ -30,11 +30,11 @@ with tf.Session() as sess:
     # 运行 'init' op
     sess.run(init_op)
     # 打印 'state' 的初始值
-    print sess.run(state)
+    print(sess.run(state))
     # 运行 op, 更新 'state', 并打印 'state'
     for _ in range(3):
         sess.run(update)
-        print sess.run(state)
+        print(sess.run(state))
 
 
 # MNIST机器学习入门
@@ -121,11 +121,11 @@ for i in range(20000):
     if i%100 == 0:
         train_accuracy = accuracy.eval(feed_dict={
             x:batch[0], y_: batch[1], keep_prob: 1.0})
-        print "step %d, training accuracy %g"%(i, train_accuracy)
+        print("step %d, training accuracy %g" % (i, train_accuracy))
     train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 # 结果是 0.9918
-print "test accuracy %g"%accuracy.eval(feed_dict={
-    x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0})
+print("test accuracy %g" % accuracy.eval(feed_dict={
+    x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
 
 # 保存训练结果
 saver = tf.train.Saver()
